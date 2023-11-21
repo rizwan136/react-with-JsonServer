@@ -1,0 +1,252 @@
+{
+  "electronics_products": [
+    {
+      "product_id": 101,
+      "product_name": "Smartphone X",
+      "brand": "TechGadget",
+      "price": 499.99,
+      "color": "Midnight Black",
+      "specifications": {
+        "display": "6.2-inch AMOLED",
+        "processor": "Octa-core 2.5 GHz",
+        "storage": "128GB",
+        "ram": "8GB",
+        "camera": {
+          "rear": "16MP + 12MP",
+          "front": "8MP"
+        },
+        "battery": "4000mAh",
+        "operating_system": "Android 10"
+      },
+      "availability": {
+        "in_stock": true,
+        "stock_quantity": 100
+      }
+    },
+    {
+      "product_id": 102,
+      "product_name": "Laptop Pro",
+      "brand": "TechMaster",
+      "price": 1099.99,
+      "color": "Silver",
+      "specifications": {
+        "display": "15.6-inch FHD",
+        "processor": "Intel i7 10th Gen",
+        "storage": "512GB SSD",
+        "ram": "16GB",
+        "graphics_card": "NVIDIA GeForce GTX 1650"
+      },
+      "availability": {
+        "in_stock": true,
+        "stock_quantity": 50
+      }
+    },
+    {
+      "product_id": 103,
+      "product_name": "Wireless Earbuds",
+      "brand": "AudioTech",
+      "price": 79.99,
+      "color": "White",
+      "specifications": {
+        "battery_life": "10 hours",
+        "connectivity": "Bluetooth 5.0",
+        "water_resistance": "IPX4"
+      },
+      "availability": {
+        "in_stock": true,
+        "stock_quantity": 200
+      }
+    },
+    {
+      "product_id": 104,
+      "product_name": "4K Smart TV",
+      "brand": "VisionTech",
+      "price": 799.99,
+      "screen_size": "55-inch",
+      "resolution": "4K UHD",
+      "smart_features": ["Smart Hub", "Voice Control"],
+      "availability": {
+        "in_stock": false,
+        "stock_quantity": 0
+      }
+    },
+    {
+      "product_id": 105,
+      "product_name": "Gaming Mouse",
+      "brand": "GameMaster",
+      "price": 49.99,
+      "dpi": 12000,
+      "rgb_lighting": true,
+      "availability": {
+        "in_stock": true,
+        "stock_quantity": 30
+      }
+    },
+    {
+      "product_id": 106,
+      "product_name": "Fitness Tracker",
+      "brand": "FitTech",
+      "price": 59.99,
+      "features": ["Heart Rate Monitor", "Sleep Tracking", "Waterproof"],
+      "availability": {
+        "in_stock": true,
+        "stock_quantity": 50
+      }
+    },
+    {
+      "product_id": 107,
+      "product_name": "Portable Bluetooth Speaker",
+      "brand": "SoundWave",
+      "price": 39.99,
+      "color": "Blue",
+      "battery_life": "8 hours",
+      "availability": {
+        "in_stock": true,
+        "stock_quantity": 100
+      }
+    },
+    {
+      "product_id": 108,
+      "product_name": "Ultra-Wide Monitor",
+      "brand": "ViewScape",
+      "price": 699.99,
+      "screen_size": "34-inch",
+      "resolution": "WQHD",
+      "curvature": "1500R",
+      "availability": {
+        "in_stock": true,
+        "stock_quantity": 20
+      }
+    },
+    {
+      "product_id": 109,
+      "product_name": "Smart Home Security Camera",
+      "brand": "SecureTech",
+      "price": 129.99,
+      "resolution": "1080p HD",
+      "night_vision": true,
+      "availability": {
+        "in_stock": true,
+        "stock_quantity": 15
+      }
+    },
+    {
+      "product_id": 110,
+      "product_name": "Wireless Charging Pad",
+      "brand": "ChargeTech",
+      "price": 29.99,
+      "compatibility": ["iPhone", "Samsung", "AirPods"],
+      "availability": {
+        "in_stock": true,
+        "stock_quantity": 75
+      }
+    }
+  ],
+  "grocery_items": [
+    {
+      "id": 1,
+      "name": "Apples",
+      "category": "Fruits",
+      "price": 2.49,
+      "quantity": 10
+    },
+    {
+      "id": 2,
+      "name": "Milk",
+      "category": "Dairy",
+      "price": 1.99,
+      "quantity": 3
+    },
+    {
+      "id": 3,
+      "name": "Bread",
+      "category": "Bakery",
+      "price": 2.29,
+      "quantity": 5
+    },
+    {
+      "id": 4,
+      "name": "Eggs",
+      "category": "Dairy",
+      "price": 3.99,
+      "quantity": 2
+    },
+    {
+      "id": 5,
+      "name": "Chicken Breast",
+      "category": "Meat",
+      "price": 7.99,
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "name": "Spinach",
+      "category": "Vegetables",
+      "price": 1.49,
+      "quantity": 4
+    },
+    {
+      "id": 7,
+      "name": "Pasta",
+      "category": "Grains",
+      "price": 1.79,
+      "quantity": 3
+    },
+    {
+      "id": 8,
+      "name": "Tomatoes",
+      "category": "Vegetables",
+      "price": 2.99,
+      "quantity": 6
+    },
+    {
+      "id": 9,
+      "name": "Cheese",
+      "category": "Dairy",
+      "price": 4.49,
+      "quantity": 2
+    },
+    {
+      "id": 10,
+      "name": "Orange Juice",
+      "category": "Beverages",
+      "price": 3.29,
+      "quantity": 2
+    },
+    {
+      "id": 11,
+      "name": "Salmon",
+      "category": "Seafood",
+      "price": 9.99,
+      "quantity": 1
+    },
+    {
+      "id": 12,
+      "name": "Potatoes",
+      "category": "Vegetables",
+      "price": 2.89,
+      "quantity": 5
+    },
+    {
+      "id": 13,
+      "name": "Cereal",
+      "category": "Breakfast",
+      "price": 3.49,
+      "quantity": 2
+    },
+    {
+      "id": 14,
+      "name": "Yogurt",
+      "category": "Dairy",
+      "price": 1.79,
+      "quantity": 4
+    },
+    {
+      "id": 15,
+      "name": "Green Beans",
+      "category": "Vegetables",
+      "price": 1.99,
+      "quantity": 3
+    }
+  ]
+}
