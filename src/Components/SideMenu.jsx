@@ -8,6 +8,7 @@ import {
   faQuestion
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SideMenu = () => {
   const [iconShow, setIconShow] = useState(false);
@@ -18,10 +19,10 @@ const SideMenu = () => {
         <ul className="space-y-5 font-bold text-lg">
           {/* <li className="font-extrabold text-3xl text-green-400 p-3 ">Demo</li> */}
           <li className="p-2 hover:shadow hover:shadow-green-400">
-            <a>
+            <Link>
               <FontAwesomeIcon icon={faHome} />
               <span className="ml-2">DashBoard</span>
-            </a>
+            </Link>
           </li>
 
           <li
@@ -30,7 +31,7 @@ const SideMenu = () => {
               setIconShow((element) => !element);
             }}
           >
-            <a>
+            <Link>
               <FontAwesomeIcon icon={faList} />
               <span className="ml-2"> Products</span>
               {!iconShow ? (
@@ -38,34 +39,34 @@ const SideMenu = () => {
               ) : (
                 <FontAwesomeIcon icon={faCaretUp} className="ml-9" />
               )}
-            </a>
+            </Link>
           </li>
           {iconShow && (
             <ul className="text-sm capitalize">
               {/* Dropdown content goes here */}
-              <a href="electronics">
+              <Link to="/electronics">
                 <li className=" hover:bg-white hover:text-black  rounded p-2  m-1">
                   <span className="ml-10">electronics</span>
                 </li>
-              </a>
-              <a href="grocery">
+              </Link>
+              <Link to="/grocery">
                 <li className="hover:bg-white hover:text-black rounded p-2  m-1">
                   <span className="ml-10">Grocery</span>
                 </li>
-              </a>
+              </Link>
             </ul>
           )}
           <li className="p-2  hover:shadow  hover:shadow-green-400">
-            <a>
+            <Link>
               <FontAwesomeIcon icon={faGear} />
               <span className="ml-2"> Setting</span>
-            </a>
+            </Link>
           </li>
           <li className="p-2  hover:shadow  hover:shadow-green-400">
-            <a>
+            <Link>
               <FontAwesomeIcon icon={faQuestion} />
               <span className="ml-2">FAQs</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
