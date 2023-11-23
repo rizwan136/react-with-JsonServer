@@ -11,8 +11,9 @@ const Electronics = () => {
   }, []);
   return (
     <>
-      <div className="m-10 shadow p-5 relative">
-        <table className="w-full text-sm text-left ">
+      <div className="m-10  p-5 relative">
+        <h2 className="font-bold text-2xl py-4">Electronics</h2>
+        <table className="w-full text-sm text-left shadow">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
             <tr>
               <th className="px-6 py-3">id</th>

@@ -16,7 +16,6 @@ const SideMenu = () => {
     <>
       <div className=" h-screen  p-3   bg-black text-white uppercase fixed ">
         <ul className="space-y-5 font-bold text-lg">
-          {/* <li className="font-extrabold text-3xl text-green-400 p-3 ">Demo</li> */}
           <li className="p-2 hover:shadow hover:shadow-green-400">
             <a>
               <FontAwesomeIcon icon={faHome} />
@@ -42,7 +41,6 @@ const SideMenu = () => {
           </li>
           {iconShow && (
             <ul className="text-sm capitalize">
-              {/* Dropdown content goes here */}
               <a href="electronics">
                 <li className=" hover:bg-white hover:text-black  rounded p-2  m-1">
                   <span className="ml-10">electronics</span>
