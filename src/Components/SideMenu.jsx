@@ -43,7 +43,7 @@ const SideMenu = () => {
           {iconShow && (
             <ul className="text-sm capitalize">
               {/* Dropdown content goes here */}
-              <a href="electronics">
+              <Link to="/electronics">
                 <li className=" hover:bg-white hover:text-black  rounded p-2  m-1">
                   <span className="ml-10">electronics</span>
                 </li>
