@@ -15,7 +15,7 @@ const SideMenu = () => {
 
   return (
     <>
-      <div className=" h-screen  p-3   bg-black text-white uppercase fixed ">
+      <div className=" h-screen  p-3   bg-slate-950 text-white uppercase fixed ">
         <ul className="space-y-5 font-bold text-lg">
           <li className="p-2 hover:shadow hover:shadow-green-400">
             <Link>

@@ -64,6 +64,7 @@
       "price": 799.99,
       "screen_size": "55-inch",
       "resolution": "4K UHD",
+      "color": "White",
       "smart_features": ["Smart Hub", "Voice Control"],
       "availability": {
         "in_stock": false,
@@ -76,6 +77,7 @@
       "brand": "GameMaster",
       "price": 49.99,
       "dpi": 12000,
+      "color": "black",
       "rgb_lighting": true,
       "availability": {
         "in_stock": true,
@@ -87,6 +89,7 @@
       "product_name": "Fitness Tracker",
       "brand": "FitTech",
       "price": 59.99,
+      "color": "Pink",
       "features": ["Heart Rate Monitor", "Sleep Tracking", "Waterproof"],
       "availability": {
         "in_stock": true,
@@ -110,6 +113,7 @@
       "product_name": "Ultra-Wide Monitor",
       "brand": "ViewScape",
       "price": 699.99,
+      "color": "Yelllow",
       "screen_size": "34-inch",
       "resolution": "WQHD",
       "curvature": "1500R",
@@ -123,6 +127,7 @@
       "product_name": "Smart Home Security Camera",
       "brand": "SecureTech",
       "price": 129.99,
+      "color": "Midnight Black",
       "resolution": "1080p HD",
       "night_vision": true,
       "availability": {
@@ -135,6 +140,7 @@
       "product_name": "Wireless Charging Pad",
       "brand": "ChargeTech",
       "price": 29.99,
+      "color": "Purple",
       "compatibility": ["iPhone", "Samsung", "AirPods"],
       "availability": {
         "in_stock": true,

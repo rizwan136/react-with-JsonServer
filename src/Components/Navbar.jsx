@@ -5,7 +5,7 @@ const Navbar = () => {
   const [DropDown, setDropdown] = useState(false);
   return (
     <>
-      <nav className="bg-black sticky top-0 z-50">
+      <nav className="bg-slate-950 sticky top-0 z-50">
         <div className=" flex items-center justify-between  p-4">
           <div>
             <Link
