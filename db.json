@@ -5,57 +5,21 @@
       "product_name": "Smartphone X",
       "brand": "TechGadget",
       "price": 499.99,
-      "color": "Midnight Black",
-      "specifications": {
-        "display": "6.2-inch AMOLED",
-        "processor": "Octa-core 2.5 GHz",
-        "storage": "128GB",
-        "ram": "8GB",
-        "camera": {
-          "rear": "16MP + 12MP",
-          "front": "8MP"
-        },
-        "battery": "4000mAh",
-        "operating_system": "Android 10"
-      },
-      "availability": {
-        "in_stock": true,
-        "stock_quantity": 100
-      }
+      "color": "Midnight Black"
     },
     {
       "product_id": 102,
       "product_name": "Laptop Pro",
       "brand": "TechMaster",
       "price": 1099.99,
-      "color": "Silver",
-      "specifications": {
-        "display": "15.6-inch FHD",
-        "processor": "Intel i7 10th Gen",
-        "storage": "512GB SSD",
-        "ram": "16GB",
-        "graphics_card": "NVIDIA GeForce GTX 1650"
-      },
-      "availability": {
-        "in_stock": true,
-        "stock_quantity": 50
-      }
+      "color": "Silver"
     },
     {
       "product_id": 103,
       "product_name": "Wireless Earbuds",
       "brand": "AudioTech",
       "price": 79.99,
-      "color": "White",
-      "specifications": {
-        "battery_life": "10 hours",
-        "connectivity": "Bluetooth 5.0",
-        "water_resistance": "IPX4"
-      },
-      "availability": {
-        "in_stock": true,
-        "stock_quantity": 200
-      }
+      "color": "White"
     },
     {
       "product_id": 104,
@@ -64,12 +28,7 @@
       "price": 799.99,
       "screen_size": "55-inch",
       "resolution": "4K UHD",
-      "color": "White",
-      "smart_features": ["Smart Hub", "Voice Control"],
-      "availability": {
-        "in_stock": false,
-        "stock_quantity": 0
-      }
+      "color": "White"
     },
     {
       "product_id": 105,
@@ -77,75 +36,42 @@
       "brand": "GameMaster",
       "price": 49.99,
       "dpi": 12000,
-      "color": "black",
-      "rgb_lighting": true,
-      "availability": {
-        "in_stock": true,
-        "stock_quantity": 30
-      }
+      "color": "black"
     },
     {
       "product_id": 106,
       "product_name": "Fitness Tracker",
       "brand": "FitTech",
       "price": 59.99,
-      "color": "Pink",
-      "features": ["Heart Rate Monitor", "Sleep Tracking", "Waterproof"],
-      "availability": {
-        "in_stock": true,
-        "stock_quantity": 50
-      }
+      "color": "Pink"
     },
     {
       "product_id": 107,
       "product_name": "Portable Bluetooth Speaker",
       "brand": "SoundWave",
       "price": 39.99,
-      "color": "Blue",
-      "battery_life": "8 hours",
-      "availability": {
-        "in_stock": true,
-        "stock_quantity": 100
-      }
+      "color": "Blue"
     },
     {
       "product_id": 108,
       "product_name": "Ultra-Wide Monitor",
       "brand": "ViewScape",
       "price": 699.99,
-      "color": "Yelllow",
-      "screen_size": "34-inch",
-      "resolution": "WQHD",
-      "curvature": "1500R",
-      "availability": {
-        "in_stock": true,
-        "stock_quantity": 20
-      }
+      "color": "Yelllow"
     },
     {
       "product_id": 109,
       "product_name": "Smart Home Security Camera",
       "brand": "SecureTech",
       "price": 129.99,
-      "color": "Midnight Black",
-      "resolution": "1080p HD",
-      "night_vision": true,
-      "availability": {
-        "in_stock": true,
-        "stock_quantity": 15
-      }
+      "color": "Midnight Black"
     },
     {
       "product_id": 110,
       "product_name": "Wireless Charging Pad",
       "brand": "ChargeTech",
       "price": 29.99,
-      "color": "Purple",
-      "compatibility": ["iPhone", "Samsung", "AirPods"],
-      "availability": {
-        "in_stock": true,
-        "stock_quantity": 75
-      }
+      "color": "Purple"
     }
   ],
   "grocery_items": [

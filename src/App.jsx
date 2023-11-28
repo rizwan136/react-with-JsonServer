@@ -5,6 +5,7 @@ import Electronics from "./Components/Electronics";
 import Navbar from "./Components/Navbar";
 import Grocery from "./Components/Grocery";
 import AddNewProducts from "./Components/AddNewProducts";
+import GroceryForm from "./Components/GroceryForm";
 
 const App = () => {
   return (
@@ -21,6 +22,12 @@ const App = () => {
                 path="/product-form"
                 element={
                   <div className="container mx-auto">{<AddNewProducts />}</div>
+                }
+              ></Route>
+              <Route
+                path="/grocery-form"
+                element={
+                  <div className="container mx-auto">{<GroceryForm />}</div>
                 }
               ></Route>
               <Route

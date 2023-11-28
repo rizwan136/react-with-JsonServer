@@ -1,29 +1,40 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const Electronics = () => {
   const [eProducts, setEProducts] = useState([]);
+  const [data, setData] = useState([]);
+  const [searchIcon, setSearchIcon] = useState(false);
+  // const RemoveDublicate = new Set(data.map((p) => p.color));
+  // const uniqueColorsOfProduct = Array.from(RemoveDublicate).sort();
 
-  const RemoveDublicate = new Set(eProducts.map((p) => p.color));
-  const uniqueColorsOfProduct = Array.from(RemoveDublicate).sort();
-
-  const RemoveDublicateBrandName = new Set(eProducts.map((p) => p.brand));
-  const uniqueBrandName = Array.from(RemoveDublicateBrandName).sort();
+  // const RemoveDublicateBrandName = new Set(data.map((p) => p.brand));
+  // const uniqueBrandName = Array.from(RemoveDublicateBrandName).sort();
 
   useEffect(() => {
     axios
       .get("http://localhost:3030/electronics_products")
-      .then((res) => setEProducts(res.data))
+      .then((res) => {
+        setEProducts(res.data), setData(res.data);
+      })
       .catch((err) => console.log(err));
   }, []);
 
-  const FiltterByBrand = (element) => {
-    console.log(element);
-    const filterProductByBrand = eProducts.filter((p) => p.brand === element);
-    console.log(filterProductByBrand);
-    setEProducts(filterProductByBrand);
+  const search = (query) => {
+    const filteredResults = data.filter(
+      (product) =>
+        product.product_name.toLowerCase().includes(query.toLowerCase()) ||
+        product.color.toLowerCase().includes(query.toLowerCase()) ||
+        product.brand.toLowerCase().includes(query.toLowerCase()) ||
+        product.price.toString().includes(query) ||
+        product.product_id.toString().includes(query)
+    );
+    setEProducts(filteredResults);
   };
+
   return (
     <>
       <div className="p-5">
@@ -64,11 +75,11 @@ const Electronics = () => {
             </table>
           </div>
           <div className="w-56 ">
-            <h2 className="text-2xl font-bold  text-slate-950 py-1 capitalize my-2">
+            <h2 className="text-2xl font-bold  text-slate-950 mt-16 capitalize py-2">
               Filtters
             </h2>
             <ul className="flex flex-col gap-4">
-              <li className="text-sm flex justify-between ">
+              {/* <li className="text-sm flex justify-between ">
                 <span className="p-1">Color Filtter:</span>
                 <select name="category" className=" border p-1 truncate w-28">
                   {uniqueColorsOfProduct.map((data, i) => {
@@ -91,7 +102,7 @@ const Electronics = () => {
                   className=" border p-1 truncate w-28"
                   defaultValue="select color"
                   onChange={(event) => {
-                    FiltterByBrand(event.target.value);
+                    search(event.target.value);
                   }}
                 >
                   {uniqueBrandName.map((data, i) => {
@@ -102,15 +113,23 @@ const Electronics = () => {
                     );
                   })}
                 </select>
-              </li>
+              </li> */}
               <li className="text-sm ">
                 <form>
-                  <label className="">Search</label>
+                  <label className="relative">Search</label>
                   <input
                     type="search"
                     className="w-full bg-slate-50 border p-2 focus:outline-0 focus:border-slate-900"
-                    onChange={(event) => FiltterByBrand(event.target.value)}
+                    onChange={(event) => search(event.target.value)}
+                    onFocus={() => setSearchIcon(true)}
+                    onBlur={() => setSearchIcon(false)}
                   />
+                  {!searchIcon && (
+                    <FontAwesomeIcon
+                      icon={faMagnifyingGlass}
+                      className="absolute right-56 mt-3 text-slate-300 focus:hidden"
+                    />
+                  )}
                 </form>
               </li>
             </ul>

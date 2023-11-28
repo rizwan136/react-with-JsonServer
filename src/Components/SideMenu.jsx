@@ -42,11 +42,11 @@ const SideMenu = () => {
           </li>
           {iconShow && (
             <ul className="text-sm capitalize">
-              <Link to="/product-form">
+              {/* <Link to="/product-form">
                 <li className="hover:bg-white hover:text-black rounded p-2  m-1">
                   <span className="ml-10">Add New Product</span>
                 </li>
-              </Link>
+              </Link> */}
               <Link to="/electronics">
                 <li className=" hover:bg-white hover:text-black  rounded p-2  m-1">
                   <span className="ml-10">electronics</span>
